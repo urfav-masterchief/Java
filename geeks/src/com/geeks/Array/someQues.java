@@ -39,7 +39,7 @@ public class someQues {
 //        }
 //        IO.println();
 //        IO.print("Enter the number you want to scan to check if its in the array: ");
-//        int y = sc.nextInt();
+//        int y = sc.nextInt();code
 //        boolean flag = false; //nahi mila
 //        for (int i=0;i<x.length;i++){
 //            if (x[i]==y){
@@ -74,6 +74,6 @@ public class someQues {
 //        IO.println(max);
 
         //Q:Find the second largest element in the given array
-        int max = Integer.MIN_VALUE; //Continue from 1:04:34
+        int max = Integer.MIN_VALUE; //Continue from 1:04:34      //
     }
 }
