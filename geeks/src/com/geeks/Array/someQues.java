@@ -13,6 +13,14 @@ public class someQues {
 //            }
 //        }
 
+        //Again
+//        int[] marks= {45,34,32,67,76,7,36};
+//        for(int i = 0; i<marks.length;i++){
+//            if (marks[i]<35){
+//                IO.println(i);
+//            }
+//        }
+
        //Q:Which element of the array does this expression reference?
         //num[4]
         //A: element of 'num' at the 4th index, which is 5th element from the start
@@ -24,6 +32,15 @@ public class someQues {
 //            sum += x[i];
 //        }
 //        IO.println(sum);
+
+        //Again
+//        int[] y = {23,34,46,31,75,21};
+//        int sum = 0;
+//        for(int i = 0; i<y.length;i++){  // here i<=y.length gives index out of bounds exception
+//            sum += y[i];
+//        }
+//        IO.println(sum);
+
 
         //Linear Search
         //Q:Find the element 'x' in the array. Take array and x as input
@@ -52,6 +69,18 @@ public class someQues {
 //            IO.println("Doesn't exist in the array");
 //        }
 
+
+
+        //Again
+        IO.print("Enter size elements ");
+        int n = sc.nextInt();
+        int[] size = new int[n];
+        IO.print("Enter elements of array: ");
+        for (int i =0; i<n; i++){
+            size[i] = sc.nextInt();
+        }
+
+
         //Q:Find the maximum value out of all the elements in the array
 //        int[] x = {21, 23, 35, 64, 992, 6664,13,534,32};
 //            int max = -1;
@@ -73,7 +102,18 @@ public class someQues {
 //        }
 //        IO.println(max);
 
-        //Q:Find the second largest element in the given array
-        int max = Integer.MIN_VALUE; //Continue from 1:04:34   //
+
+        //Another way
+//        int[] arr = {-4,-5,-2,-67,-2,-3};
+//        int max = Integer.MIN_VALUE;
+//        for(int i=0;i<=arr.length; i++){
+//            if(arr[i]>max){
+//                max = arr[i];
+//            }
+//        }
+//        IO.println(max);
+
+        //Q:Find the second-largest element in the given array
+
     }
 }

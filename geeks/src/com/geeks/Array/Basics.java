@@ -32,7 +32,7 @@ public class Basics {
         //Taking input
         IO.print("Enter the length of array: ");
         int n = sc.nextInt();
-        int[] x = new int[n];
+        int[] x = new int[n]; // here n is taken from the user
         //Input
         IO.print("Enter array elements: ");
         for(int i = 0; i<n;i++){
