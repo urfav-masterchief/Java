@@ -135,6 +135,15 @@ public class someQues {
 //        }
 //        IO.println(max);
 
+        //Again
+//        int[] p = {-12,-2,-1,-46};
+//        int max = Integer.MIN_VALUE; // Putting the minimum value of an integer to ever exist so that a -ve greater number can take place easily
+//        for (int i=0;i<p.length;i++){
+//            if (p[i]>max){
+//                max = p[i];
+//            }
+//        }
+//        IO.println(max);
 
         //Another way
 //        int[] arr = {-4,-5,-2,-67,-2,-3};
