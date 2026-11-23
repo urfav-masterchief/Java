@@ -156,21 +156,40 @@ public class someQues {
 //        IO.println(max);
 
         //Q:Find the second-largest element in the given array
-        int[] arr = {-4,-5,-2,-67,-90,-3};
-        int max = Integer.MIN_VALUE;
-        for(int i=0;i<arr.length; i++){
-            if(arr[i]>max){
-                max = arr[i];
-            }
-        }
-        IO.println("Largest is "+max);
+//        int[] arr = {-4,-5,-2,-67,-90,-3};
+//        int max = Integer.MIN_VALUE;
+//        for(int i=0;i<arr.length; i++){
+//            if(arr[i]>max){
+//                max = arr[i];
+//            }
+//        }
+//        IO.println("Largest is "+max);
+//
+//        int smax = Integer.MIN_VALUE;
+//        for (int i=0;i< arr.length;i++){
+//            if (arr[i]>smax && arr[i]!= max){
+//                smax = arr[i];
+//            }
+//        }
+//        IO.println("Second largest is "+smax);
 
-        int smax = Integer.MIN_VALUE;
-        for (int i=0;i< arr.length;i++){
-            if (arr[i]>smax && arr[i]!= max){
-                smax = arr[i];
-            }
-        }
-        IO.println("Second largest is "+smax);
+        //Q: what is the difference in 5 b/w these two expressions
+
+//        int[] num = new int[5]; //Here 5 is size/length of the array
+//        num[5] = 11; // here we are assiigning the number 11 to the index position 5 of the array
+
+        //Q: count the number of elements in the given array greater than a given number x
+//        int[] w = {12,23,35,12,46,67};
+//        int x = 12;
+//        int count = 0;
+//        for (int i = 0; i < w.length;i++){
+//            if (w[i]>x){
+//                count++;
+//            }
+//        }
+//        IO.println(count);
+
+
+
     }
 }
