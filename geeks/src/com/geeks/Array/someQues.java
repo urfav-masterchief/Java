@@ -114,6 +114,16 @@ public class someQues {
 //            }
 //            IO.println(max);
 
+        //Again
+//        int[] o = {232, 35, 12, 46, 67, 14, 3636, 6756, 1212};
+//        int max = -1;
+//        for (int i =0;i<o.length;i++){
+//            if (o[i]>max){
+//                max = o[i];
+//            }
+//        }
+//        IO.println(max);
+
 
         //For negative numbers:
 //        int[] x = {-2,-5,-67,-4};
