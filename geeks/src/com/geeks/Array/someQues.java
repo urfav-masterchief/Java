@@ -156,6 +156,21 @@ public class someQues {
 //        IO.println(max);
 
         //Q:Find the second-largest element in the given array
+        int[] arr = {-4,-5,-2,-67,-90,-3};
+        int max = Integer.MIN_VALUE;
+        for(int i=0;i<arr.length; i++){
+            if(arr[i]>max){
+                max = arr[i];
+            }
+        }
+        IO.println("Largest is "+max);
 
+        int smax = Integer.MIN_VALUE;
+        for (int i=0;i< arr.length;i++){
+            if (arr[i]>smax && arr[i]!= max){
+                smax = arr[i];
+            }
+        }
+        IO.println("Second largest is "+smax);
     }
 }
