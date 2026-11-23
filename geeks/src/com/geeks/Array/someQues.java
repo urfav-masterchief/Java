@@ -74,35 +74,35 @@ public class someQues {
 
         //Again
         //Taking input of array
-        IO.print("Enter size elements: ");
-        int n = sc.nextInt();
-        int[] size = new int[n];
-        IO.println("Okay, remember to only put "+ n + " number of elements! Now...");
-        IO.print("Enter elements of array: ");
-        for (int i =0; i<n; i++){
-            size[i] = sc.nextInt();
-        }
-
-        // Writing output now
-        IO.print("Array is: ");
-        for (int i=0 ; i<size.length;i++){
-            IO.print(size[i]+" ");
-        }
-        IO.println();
-        IO.print("Enter the number you wish to scan for in the array: ");
-        int u = sc.nextInt();
-        boolean flag = false; // Not found
-        for (int i = 0; i < size.length;i++){
-            if (size[i]==u){
-                flag = true; // Found
-                IO.println("That Exists");
-                break;
-            }
-        }
-
-        if (flag == false){
-            IO.println("Doesn't exist");
-        }
+//        IO.print("Enter size elements: ");
+//        int n = sc.nextInt();
+//        int[] size = new int[n];
+//        IO.println("Okay, remember to only put "+ n + " number of elements! Now...");
+//        IO.print("Enter elements of array: ");
+//        for (int i =0; i<n; i++){
+//            size[i] = sc.nextInt();
+//        }
+//
+//        // Writing output now
+//        IO.print("Array is: ");
+//        for (int i=0 ; i<size.length;i++){
+//            IO.print(size[i]+" ");
+//        }
+//        IO.println();
+//        IO.print("Enter the number you wish to scan for in the array: ");
+//        int u = sc.nextInt();
+//        boolean flag = false; // Not found
+//        for (int i = 0; i < size.length;i++){
+//            if (size[i]==u){
+//                flag = true; // Found
+//                IO.println("That Exists");
+//                break;
+//            }
+//        }
+//
+//        if (flag == false){
+//            IO.println("Doesn't exist");
+//        }
 
         //Q:Find the maximum value out of all the elements in the array
 //        int[] x = {21, 23, 35, 64, 992, 6664,13,534,32};
