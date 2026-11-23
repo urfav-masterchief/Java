@@ -188,8 +188,5 @@ public class someQues {
 //            }
 //        }
 //        IO.println(count);
-
-
-
     }
 }
