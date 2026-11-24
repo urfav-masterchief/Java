@@ -50,5 +50,5 @@ public class PassingArrayToMethods {
 
     //Q:when you pass an array as an argument to a method, what actually gets passed?
     //A: Address of the array OR Address of the first element of the array
-    // but better answer in Java is --> Array is passed by reference
+    // but better answer in Java is --> Array is passed by reference.
 }
