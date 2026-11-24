@@ -26,10 +26,26 @@ public class PassingArrayToMethods {
         //Revising swap
         int a = 10; // a is 10
         int b = 5;  // b is 5
-        IO.println(a+" "+b); // prints 10 5
+//        IO.println(a+" "+b); // prints 10 5
         int temp = a; // value of a goes in temp, so temp has 10 now
         a = b; // value of b goes in a, so a is 5 now
         b = temp; // value of temp goes in b, so b is 10 now
-        IO.println(a+" "+b);  // prints 5 10
+//        IO.println(a+" "+b);  // prints 5 10
+
+        // and if we try to swap these two numbers using methods, it won't work because
+        // the  int a and int b in that method would be different from the main methods' a and b
+
+        // but with array we can swap
+
+        int[] x = {10};
+        int[] y = {5};
+        IO.println(x[0]+" "+y[0]);
+        swapArray(x,y);
+        IO.println(x[0]+" "+y[0]);
+    }
+    public static void swapArray(int[] a, int[] b){
+        int temp = a[0];
+        a[0] = b[0];
+        b[0] = temp;
     }
 }
