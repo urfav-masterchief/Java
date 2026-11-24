@@ -47,4 +47,8 @@ public class PassingArrayToMethods {
         a[0] = a[1];
         a[1] = temp;
     }
+
+    //Q:when you pass an array as an argument to a method, what actually gets passed?
+    //A: Address of the array OR Address of the first element of the array
+    // but better answer in Java is --> Array is passed by reference
 }
