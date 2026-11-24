@@ -37,15 +37,14 @@ public class PassingArrayToMethods {
 
         // but with array we can swap
 
-        int[] x = {10};
-        int[] y = {5};
-        IO.println(x[0]+" "+y[0]);
-        swapArray(x,y);
-        IO.println(x[0]+" "+y[0]);
+        int[] x = {10, 5};
+        IO.println(x[0]+" "+x[1]);
+        swapArray(x);
+        IO.println(x[0]+" "+x[1]);
     }
-    public static void swapArray(int[] a, int[] b){
+    public static void swapArray(int[] a){  //the names of array a and b here don't matter since they are pointing to the same array
         int temp = a[0];
-        a[0] = b[0];
-        b[0] = temp;
+        a[0] = a[1];
+        a[1] = temp;
     }
 }
