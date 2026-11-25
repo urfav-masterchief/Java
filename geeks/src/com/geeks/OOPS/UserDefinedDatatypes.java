@@ -1,13 +1,13 @@
 package com.geeks.OOPS;
 
+class Student{ //Blueprint Datatype
+    String name;
+    int rno;
+    int age;
+}
 public class UserDefinedDatatypes {
-    public static class Student{ //Blueprint datatype
-        String name;
-        int rno;
-        int age;
-    }
     public static void main(String[] args){
-        Student student = new Student(); // Object creation
+        Student student = new Student(); // Object creation, Object are real world entities
         student.age = 19;
         student.name = "Riley Reeds";
         student.rno = 33;
