@@ -11,9 +11,9 @@ public class Constructors {
 
         }
         Car(String name, int seats, double torque){
-            name = name;  // When we do this, the compiler(or sum) gets confused and returns 0 and null
-            seats = seats; // NOT error tho, but null
-            torque = torque;
+            this.name = name; // now the "this" keyword points to the variables we have created in the class Above
+            this.seats = seats;  // So the compiler knows where it's pointing now
+            this.torque = torque;
         }
         Car(int s, double t, String n){
 
