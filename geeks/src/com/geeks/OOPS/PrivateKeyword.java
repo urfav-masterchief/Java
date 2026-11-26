@@ -1,8 +1,10 @@
 package com.geeks.OOPS;
-
+// ALL THIS PROCESS OF ACCESSING STUFF WITH PRIVATE KEYWORD
+// IS CALLED
+// ENCAPSULATION
 class CollegeStudents{
     String name;
-    int age;
+    private int age;
     private int rno;
     void print(){ // this is a Getter
         IO.println(name+" "+age+" "+rno);
@@ -13,12 +15,15 @@ class CollegeStudents{
     int setRno(int x){ // setter
         return x;
     }
+    int setAge(int y){
+        return y;
+    }
 }
 public class PrivateKeyword {
     public static void main(String[] args){
      CollegeStudents s = new CollegeStudents();
      s.name = "Shelly";
-     s.age = 19;
+     s.setAge(19);
 //     s.rno = 33; gives error since rno is private
         //but
         s.setRno(13);
