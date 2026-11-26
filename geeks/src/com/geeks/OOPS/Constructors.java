@@ -5,6 +5,10 @@ public class Constructors {
         String name;
         int seats;
         double torque;
+        //Constructor overloading
+        Car(){ //Default constructor
+
+        }
         Car(String n, int s, double t){
             name = n;
             seats = s;
@@ -20,5 +24,8 @@ public class Constructors {
         c1.printInfo();
         Car c2 = new Car("Lamborghini", 4, 5.1);
         c2.printInfo();
+
+        Car c3 = new Car(); // This only works since we have a non parameterized constructor as well, otherwise it wouldn't have worked
+
     }
 }
