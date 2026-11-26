@@ -10,10 +10,10 @@ public class Constructors {
         Car(){ //Default constructor
 
         }
-        Car(String n, int s, double t){
-            name = n;
-            seats = s;
-            torque = t;
+        Car(String name, int seats, double torque){
+            name = name;  // When we do this, the compiler(or sum) gets confused and returns 0 and null
+            seats = seats; // NOT error tho, but null
+            torque = torque;
         }
         Car(int s, double t, String n){
 
