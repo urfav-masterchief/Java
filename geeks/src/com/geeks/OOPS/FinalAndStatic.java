@@ -2,7 +2,7 @@ package com.geeks.OOPS;
 
 class Cricketer{
     //static variables means shareable variables
-    static String country;
+    static String country = "NZ"; // we can also put final static for an immutable object, static is just good for the memory and uses less space
     String name;
     int avg;
     int runs;
@@ -15,6 +15,7 @@ public class FinalAndStatic {
         Cricketer c1 = new Cricketer();
         Cricketer c2 = new Cricketer();
         c1.country = "Australia"; // we put this
-        IO.println(c2.country); // and print c2, and Australia gets printed
+        IO.println(c2.country); // and print c2, and Australia gets printed EVEN THO WE SET country AS NZ IN THE CLASS THIS TIME
+        // see screenshot more info
     }
 }
