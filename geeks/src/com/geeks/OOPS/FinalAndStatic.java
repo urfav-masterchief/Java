@@ -1,7 +1,8 @@
 package com.geeks.OOPS;
 
 class Cricketer{
-    final String country = "New Zealand"; // now this is a finalized/immutable value we have set using the final keyword so this CANNOT be changed further like "country = 'x'" etc
+    //static variables means shareable variables
+    static String country;
     String name;
     int avg;
     int runs;
@@ -12,6 +13,8 @@ class Cricketer{
 public class FinalAndStatic {
     public static void main(String[] args){
         Cricketer c1 = new Cricketer();
-        IO.println(c1.country);
+        Cricketer c2 = new Cricketer();
+        c1.country = "Australia"; // we put this
+        IO.println(c2.country); // and print c2, and Australia gets printed
     }
 }
