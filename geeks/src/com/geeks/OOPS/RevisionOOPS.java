@@ -1,22 +1,28 @@
 package com.geeks.OOPS;
-
-public class RevisionOOPS {
-    private static class Pokemon{
-        int hp;
-        int attack;
-        int defense;
-        String type;
-        String name;
+class Pokemon{  // if we had made this in the same public class(RevisionOOPS) we have made, then the private stuff in THIS class wouldn't have been private but a part of that public class' file
+//   private int power; //if we do this and make this private  (see line 19)
+    int power;
+    String type;
+    private String name;
+    Pokemon(int power, String type, String name){
+        this.power = power; // we use the "this" keyword when we're using the same variables which point to 2 different things
+        this.type = type;
+        this.name = name;
     }
+    String getName(){ // this is a getter method used to get private stuff in our files (See line 25)
+        return name;
+    }
+    void print(){  // we can also use methods to print stuff
+        IO.println(this.power+" "+this.type);  //we can ofc choose to not use the "this" keyword, but it's better for assurance
+    }
+}
+public class RevisionOOPS {
+
     public static void main(String[] args){
-        Pokemon p1 = new Pokemon();
-        p1.name = "Pikachu"; p1.type = "Electric"; p1.attack = 70;
-
-        Pokemon p2 = new Pokemon();
-        p2.name = "Charizard"; p2.type = "Fire"; p2.attack = 110;
-
-        Pokemon p3 = p1; // This means p3 is shallow copy of p1 (p3 can control p1)
-        p3.type = "Water"; // So we put p3 as Water type
-        IO.println(p1.type); // and printed p1's type, which was then converted to water, as p1 is a shallow copy of p3 // i.e, it can be controlled by p3
+        Pokemon pikachu = new Pokemon(70, "Electric", "Pikachu");
+        Pokemon jigglypuff = new Pokemon(50, "Fairy", "Jigglypuff");
+        pikachu.print(); jigglypuff.print();
+//        pikachu.power = 77 ; // then this will give error
+//        IO.println(pikachu.getName()); // getting the name of pikachu would give error without this getter method
     }
 }
